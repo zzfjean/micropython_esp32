@@ -65,7 +65,7 @@ list(APPEND MICROPY_SOURCE_PORT
     machine_touchpad.c
     machine_adc.c
     machine_adcblock.c
-    machine_can.c 
+    //machine_can.c 
     machine_dac.c
     machine_i2c.c
     machine_i2s.c
@@ -135,7 +135,7 @@ list(APPEND IDF_COMPONENTS
     spi_flash
     ulp
     vfs
-    can
+    //can
     xtensa
 )
 
