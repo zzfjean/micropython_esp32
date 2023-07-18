@@ -2,7 +2,6 @@
 #define MICROPY_INCLUDED_ESP32_MODMACHINE_H
 
 #include "py/obj.h"
-#include "machine_can.h"
 
 typedef enum {
     // MACHINE_WAKE_IDLE=0x01,
