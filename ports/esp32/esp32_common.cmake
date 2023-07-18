@@ -136,6 +136,7 @@ list(APPEND IDF_COMPONENTS
     spi_flash
     ulp
     vfs
+    twai
     xtensa
 )
 
