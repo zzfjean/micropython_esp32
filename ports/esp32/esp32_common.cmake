@@ -142,7 +142,7 @@ list(APPEND IDF_COMPONENTS
 # Register the main IDF component.
 idf_component_register(
     SRCS
-        "machine_can.c"
+        "../machine_can.c"
         ${MICROPY_SOURCE_PY}
         ${MICROPY_SOURCE_EXTMOD}
         ${MICROPY_SOURCE_SHARED}
