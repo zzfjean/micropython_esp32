@@ -147,6 +147,7 @@ list(APPEND IDF_COMPONENTS
     ulp
     vfs
     xtensa
+    machine_can
 )
 
 # Register the main IDF component.
@@ -167,7 +168,6 @@ idf_component_register(
         ${MICROPY_BOARD_DIR}
         ${CMAKE_BINARY_DIR}
     REQUIRES
-        machine_can
         ${IDF_COMPONENTS}
 )
 
