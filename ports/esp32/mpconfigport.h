@@ -10,7 +10,6 @@
 #include "esp_system.h"
 #include "freertos/FreeRTOS.h"
 #include "driver/i2s.h"
-#include "machine_can.h"
 #include "esp_wifi_types.h"
 
 #ifndef MICROPY_CONFIG_ROM_LEVEL
