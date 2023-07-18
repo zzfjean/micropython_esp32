@@ -795,10 +795,12 @@ MP_DEFINE_CONST_OBJ_TYPE(
     machine_can_type,
     MP_QSTR_CAN,
     MP_TYPE_FLAG_NONE,
-    make_new, esp32_hw_can_make_new,
-    print, esp32_hw_can_print,
-    locals_dict, (mp_obj_dict_t *)&esp32_can_locals_dict
-    );
+    make_new, machine_hw_can_make_new,
+    print, machine_hw_can_print,
+    locals_dict, (mp_obj_dict_t *)&machine_can_locals_dict
+);
+
+
 /*
 const mp_obj_type_t machine_can_type = {
     {&mp_type_type},
