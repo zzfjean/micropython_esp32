@@ -800,7 +800,7 @@ MP_DEFINE_CONST_OBJ_TYPE(
     locals_dict, (mp_obj_dict_t *)&esp32_can_locals_dict
     );
 /*
-const mp_obj_type_t machine_can_type = {
+const mp_obj_type_t machine_twai_type = {
     {&mp_type_type},
     .name = MP_QSTR_CAN,
     .print = esp32_hw_can_print,                            // give it a print-function
