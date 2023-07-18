@@ -85,7 +85,7 @@ esp32_can_config_t can_config = {
 };
 
 STATIC esp32_can_obj_t esp32_can_obj = {
-    {&machine_twai_type},
+    {&machine_can_type},
     .config = &can_config
 };
 
@@ -792,7 +792,7 @@ STATIC MP_DEFINE_CONST_DICT(esp32_can_locals_dict, esp32_can_locals_dict_table);
 
 // Python object definition
 MP_DEFINE_CONST_OBJ_TYPE(
-    machine_twai_type,
+    machine_can_type,
     MP_QSTR_CAN,
     MP_TYPE_FLAG_NONE,
     make_new, esp32_hw_can_make_new,
@@ -800,7 +800,7 @@ MP_DEFINE_CONST_OBJ_TYPE(
     locals_dict, (mp_obj_dict_t *)&esp32_can_locals_dict
     );
 /*
-const mp_obj_type_t machine_twai_type = {
+const mp_obj_type_t machine_can_type = {
     {&mp_type_type},
     .name = MP_QSTR_CAN,
     .print = esp32_hw_can_print,                            // give it a print-function
