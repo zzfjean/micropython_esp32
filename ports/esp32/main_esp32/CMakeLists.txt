@@ -167,6 +167,7 @@ idf_component_register(
         ${MICROPY_BOARD_DIR}
         ${CMAKE_BINARY_DIR}
     REQUIRES
+        "machine_can"
         ${IDF_COMPONENTS}
 )
 
